@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b159c4-be8a-4131-8fea-cc86c5ec2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/directory/directory.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/directory/directory.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/homepage.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +85,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581452393054</updated>
-      <workItem from="1581452409514" duration="7152000" />
+      <workItem from="1581452409514" duration="7281000" />
+      <workItem from="1581621197250" duration="2149000" />
     </task>
     <servers />
   </component>
