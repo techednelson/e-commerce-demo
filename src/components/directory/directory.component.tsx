@@ -1,17 +1,10 @@
 import React from 'react';
 import './directory.component.scss';
 import MenuItem from '../menu-item/menu-item.component';
-
-interface Section {
-    title: string,
-    imageUrl: string,
-    id: number,
-    linkUrl: string,
-    size: string
-}
+import { SectionProps } from '../common/interface';
 
 export default class Directory extends React.Component<any, any> {
-    constructor(props: Section) {
+    constructor(props: SectionProps) {
         super(props);
         this.state = {
             sections: [
@@ -56,8 +49,8 @@ export default class Directory extends React.Component<any, any> {
                 <div className="homepage">
                     <div className="directory-menu">
                         {
-                            this.state.sections.map(({ title, imageUrl, id, size, linkUrl }: Section) => (
-                                <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+                            this.state.sections.map(({ ...sectionProps }: SectionProps) => (
+                                <MenuItem {...sectionProps } />
                             ))
                         }
                     </div>

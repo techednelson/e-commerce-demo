@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+
+  e-commerce-demo-prod:
+    container_name: e-commerce-demo-prod
+    build:
+      context: .
+      dockerfile: Dockerfile-prod
+    ports:
+      - '80:80'

@@ -1,17 +1,13 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import './menu-item.component.scss';
+import { SectionProps } from '../common/interface';
 
-interface Props {
-    title: string,
-    imageUrl: string,
-    key: number,
-    linkUrl?: string,
-    size: string
-}
-
-const MenuItem: React.FC<Props> = ({ title, imageUrl, size }) => (
+const MenuItem: React.FC<SectionProps> = ({
+        title, imageUrl, size, linkUrl, history, match
+    }) => (
     <React.Fragment>
-        <div className={`${size} menu-item`}>
+        <div className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
             <div className={'background-image'} style={{ backgroundImage: `url(${imageUrl})` }} />
             <div className="content">
                 <h1 className="title">{title.toUpperCase()}</h1>
@@ -21,4 +17,4 @@ const MenuItem: React.FC<Props> = ({ title, imageUrl, size }) => (
     </React.Fragment>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);
