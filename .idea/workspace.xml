@@ -2,22 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b159c4-be8a-4131-8fea-cc86c5ec2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile-prod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/enums.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/interface.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/directory/data/dummyData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/interfaces.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/collection-item/collection-item.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/directory/directory.data.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/preview-collection/collection-preview.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/preview-collection/collection-preview.component.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/enums.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/collection-item/collection-item.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/interface.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/directory/data/dummyData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.data.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/homepage.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/homepage.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/homepage/homepage.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -68,6 +71,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/pages/shop" />
+      <recent name="$PROJECT_DIR$/src/pages/homepage" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
@@ -99,7 +105,8 @@
       <updated>1581452393054</updated>
       <workItem from="1581452409514" duration="7281000" />
       <workItem from="1581621197250" duration="5654000" />
-      <workItem from="1581715729643" duration="699000" />
+      <workItem from="1581715729643" duration="2922000" />
+      <workItem from="1581760651716" duration="12946000" />
     </task>
     <servers />
   </component>
@@ -118,6 +125,10 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="337" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1057@0.23.1920.1057" timestamp="1581716100931" />
+    <state x="700" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581794069093">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="700" y="303" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1057@0.23.1920.1057" timestamp="1581794069093" />
     <state width="864" height="185" key="GridCell.Tab.0.bottom" timestamp="1581454085148">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

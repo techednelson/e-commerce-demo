@@ -1,9 +1,17 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import './menu-item.component.scss';
-import { SectionProps } from '../common/interface';
+import { RouteComponentProps } from 'react-router';
 
-const MenuItem: React.FC<SectionProps> = ({
+interface Props extends RouteComponentProps {
+    title: string;
+    imageUrl: string;
+    id: number;
+    linkUrl: string;
+    size: string;
+}
+
+const MenuItem: React.FC<Props> = ({
         title, imageUrl, size, linkUrl, history, match
     }) => (
     <React.Fragment>

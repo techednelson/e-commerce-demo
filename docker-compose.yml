@@ -5,12 +5,13 @@ services:
   e-commerce-demo:
     container_name: e-commerce-demo
     build:
-      context: .
+      context: ./
       dockerfile: Dockerfile
     volumes:
-      - '.:/app'
-      - '/app/node_modules'
+      - ./:/usr/src/e-commerce-demo
+      - ./usr/src/e-commerce-demo/node_modules
     ports:
-      - '3001:3000'
+      - '3000:3000'
     environment:
       - NODE_ENV=development
+
