@@ -3,15 +3,26 @@ import SHOP_DATA from './shop.data';
 import CollectionPreview from '../../components/preview-collection/collection-preview.component';
 import { Item } from '../../common/interfaces';
 
-export interface Props {
+interface Collection {
+    id: number,
+    title: string,
+    routeName: string,
+    items: Item[]
+}
+
+interface ShowPageState {
+    collections: Collection[]
+}
+
+interface ShowPageProps {
     id: number;
     title: string;
     routeName: string;
     items: Item[];
 }
 
-class ShopPage extends React.Component<Props, any> {
-    constructor(props: Props) {
+class ShopPage extends React.Component<ShowPageProps, ShowPageState> {
+    constructor(props: ShowPageProps) {
         super(props);
         
         this.state = {
@@ -24,7 +35,7 @@ class ShopPage extends React.Component<Props, any> {
         return (
             <div className={'shop-page'}>
                 {
-                    collections.map(({ id, ...collectionProps}: Props)  => (
+                    collections.map(({ id, ...collectionProps}: ShowPageProps)  => (
                         <CollectionPreview key={id} {...collectionProps}/>
                     ))
                 }

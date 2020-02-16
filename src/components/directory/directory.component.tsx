@@ -3,7 +3,7 @@ import './directory.component.scss';
 import MenuItem from '../menu-item/menu-item.component';
 import sections from './directory.data';
 
-export interface Props {
+interface Props {
     title: string,
     imageUrl: string,
     id: number,

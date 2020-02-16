@@ -3,12 +3,12 @@ import './collection-preview.component.scss';
 import { Item } from '../../common/interfaces';
 import CollectionItem from '../collection-item/collection-item.component';
 
-interface Props {
+interface CollectionPreviewProps {
     title: string;
     items: Item[];
 }
 
-const CollectionPreview: React.FC<Props> = ({ title, items })  => (
+const CollectionPreview: React.FC<CollectionPreviewProps> = ({ title, items })  => (
     <div className={'collection-preview'}>
        <h1 className={'title'}>{title.toUpperCase()}</h1>
         <div className="preview">
