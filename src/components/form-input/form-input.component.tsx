@@ -2,7 +2,7 @@ import React, { Attributes, HTMLAttributes, HTMLProps, InputHTMLAttributes } fro
 import './form-input.component.scss';
 
 interface FormInputProps {
-    handleChange: any;
+    onChange: any;
     name: string;
     label?: string;
     type: string;
@@ -10,12 +10,12 @@ interface FormInputProps {
     required: boolean;
 }
 
-const FormInput: React.FC<FormInputProps>= ({ handleChange, label, ...formInoutProps  }) => (
+const FormInput: React.FC<FormInputProps>= ({ onChange, label, ...formInoutProps  }) => (
     <div className="group">
-        <input {...formInoutProps}
-            type="text"
-            className="form-input"
-            onChange={handleChange} />
+        <input type="text"
+               className="form-input"
+               onChange={onChange}
+               {...formInoutProps}/>
         {
             label ?
                 (<label className={`${

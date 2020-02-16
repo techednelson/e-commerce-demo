@@ -7,7 +7,6 @@ import { signInWithGoogle } from '../../firebase/firebase.utils';
 interface SignInState {
     email: string;
     password: string;
-    name: string;
 }
 
 interface SignInProps {
@@ -17,13 +16,12 @@ interface SignInProps {
     // linkUrl: string
 }
 
-export default class SignIn extends React.Component<SignInProps, SignInState> {
+export default class SignIn extends React.Component<SignInProps, any> {
     constructor(props: SignInProps) {
         super(props);
         this.state = {
             email: '',
             password: '',
-            name: ''
         };
     }
     
@@ -35,7 +33,8 @@ export default class SignIn extends React.Component<SignInProps, SignInState> {
     handleChange = (event: any): void => {
         event.preventDefault();
         const { value, name } = event.target;
-        this.setState({ name: value });
+        console.log(value, name);
+        this.setState({ [name]:  value });
     };
     
     render() {
@@ -48,14 +47,14 @@ export default class SignIn extends React.Component<SignInProps, SignInState> {
                    <FormInput name="email"
                               type="email"
                               label = "email"
-                              handleChange={this.handleChange}
+                              onChange={this.handleChange}
                               value={this.state.email}
                               required />
                    <FormInput name="password"
                               type="password"
                               label = "password"
                               value={this.state.password}
-                              handleChange={this.handleChange}
+                              onChange={this.handleChange}
                               required />
                   <div className="buttons">
                       <CustomButton type="submit" value="Submit Form">Sign in</CustomButton>

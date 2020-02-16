@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05b159c4-be8a-4131-8fea-cc86c5ec2fbc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/custom-buttom/custom-buttom.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/custom-buttom/custom-button.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form-input/form-input.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form-input/form-input.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sign-up/sign-up.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/sign-up/sign-up.component.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sign-in-up/sign-in-up.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/sign-in-up/sign-in-up.component.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/directory/directory.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/directory/directory.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu-item/menu-item.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/preview-collection/collection-preview.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/preview-collection/collection-preview.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/header/header.component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/shop/shop.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/shop/shop.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form-input/form-input.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form-input/form-input.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-in/sign-in.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-in/sign-in.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up/sign-up.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/sign-up.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sign-up/sign-up.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sign-up/sign-up.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebase/firebase.utils.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebase/firebase.utils.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/header/header.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-in-up/sign-in-up.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in-up/sign-in-up.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/sign-in-up/sign-in-up.component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/sign-in-up/sign-in-up.component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +67,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pages/shop" />
       <recent name="$PROJECT_DIR$/src/pages/homepage" />
-      <recent name="$PROJECT_DIR$/src/pages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -115,7 +103,7 @@
       <workItem from="1581621197250" duration="5654000" />
       <workItem from="1581715729643" duration="2922000" />
       <workItem from="1581760651716" duration="19698000" />
-      <workItem from="1581854273446" duration="6074000" />
+      <workItem from="1581854273446" duration="13148000" />
     </task>
     <servers />
   </component>
@@ -162,9 +150,13 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="0" y="188" key="SettingsEditor/0.23.1920.1057@0.23.1920.1057" timestamp="1581454486990" />
-    <state x="27" y="290" width="687" height="518" key="find.popup" timestamp="1581802969023">
+    <state x="27" y="290" width="687" height="518" key="find.popup" timestamp="1581886472140">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="27" y="290" width="687" height="518" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1581802969023" />
+    <state x="27" y="290" width="687" height="518" key="find.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1581886472140" />
+    <state x="627" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1581887722568">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="627" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1581887722568" />
   </component>
 </project>

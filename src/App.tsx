@@ -3,10 +3,9 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
-import Header from './header/header.component';
+import Header from './components/header/header.component';
 import SignInUpPage from './pages/sign-in-up/sign-in-up.component';
-import { auth } from './firebase/firebase.utils';
-import firebase from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 interface AppState {
     currentUser: any
@@ -25,10 +24,27 @@ class App extends React.Component<any, AppState> {
     }
     
     componentDidMount(): void {
-        this.subscription = auth.onAuthStateChanged(user => {
-            this.setState({ currentUser: user })
-        });
+        this.onGoogleAuthenticationChange();
     }
+    
+    onGoogleAuthenticationChange = (): void => {
+        this.subscription = auth.onAuthStateChanged(async userAuth => {
+            if (userAuth) {
+                const userRef =  await createUserProfileDocument(userAuth);
+                userRef?.onSnapshot(snapshot => {
+                    this.setState({
+                        currentUser: {
+                            id: snapshot.id,
+                            ...snapshot.data()
+                        }
+                    });
+                    console.log(this.state);
+                });
+            } else {
+                this.setState({ currentUser: userAuth });
+            }
+        });
+    };
     
     componentWillUnmount(): void {
         this.subscription();
