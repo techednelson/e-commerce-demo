@@ -41,7 +41,6 @@ export default class SignIn extends React.Component<SignInProps, any> {
     handleChange = (event: any): void => {
         event.preventDefault();
         const { value, name } = event.target;
-        console.log(value, name);
         this.setState({ [name]:  value });
     };
     
