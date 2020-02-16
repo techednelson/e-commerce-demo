@@ -23,6 +23,7 @@ const FormInput: React.FC<FormInputProps>= ({ onChange, label, ...formInoutProps
                     'shrink':
                     ''
                 } form-input-label`}>
+                    {label}
                 </label>) :
                 null
         }

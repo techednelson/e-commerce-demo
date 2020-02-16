@@ -39,7 +39,7 @@ export default class SignUp extends React.Component<any, any> {
                 this.setState(initialState);
             }
         } catch (error) {
-            console.log('', error.message);
+            console.log(error.message);
         }
     };
     
