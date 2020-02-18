@@ -2,13 +2,12 @@ import React from 'react';
 import './header.component.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
-import firebase, { auth } from '../../firebase/firebase.utils';
+import { auth } from '../../firebase/firebase.utils';
+import {FirebaseUser} from '../../redux/types/FirebaseUser';
+import { connect } from 'react-redux';
+import {AppState} from '../../redux/root-reducer';
 
-interface HeaderProps {
-    currentUser: firebase.User
-}
-
-const Header: React.FC<HeaderProps> = ({ currentUser }) => (
+const Header: React.FC<FirebaseUser> = ({ currentUser }) => (
     <div className="header">
         <Link className={'logo-container'} to={'/'}>
             <Logo className={'logo'}/>
@@ -30,4 +29,8 @@ const Header: React.FC<HeaderProps> = ({ currentUser }) => (
     </div>
 );
 
-export default Header;
+const mapStateToProps = (state: AppState) => ({
+    currentUser: state.user.currentUser
+});
+
+export default connect(mapStateToProps)(Header);

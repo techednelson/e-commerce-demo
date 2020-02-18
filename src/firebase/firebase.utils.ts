@@ -27,7 +27,7 @@ export const createUserProfileDocument = async (userAuth: firebase.User, additio
                 ...additionalData
             });
         } catch (error) {
-            console.log('error creating user', error.message);
+            console.log('error creating payload', error.message);
         }
         
         return userRef;
