@@ -8,6 +8,7 @@ import SignInUpPage from './pages/sign-in-up/sign-in-up.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { setCurrentUser } from './redux/user/user.action';
 import { connect } from 'react-redux';
+import {FirebaseUser} from './redux/types/FirebaseUser';
 
 interface AppState {
     currentUser: any
@@ -17,33 +18,25 @@ class App extends React.Component<any, AppState> {
     
     private subscription: any;
     
-    constructor(props: any) {
-        super(props);
-        this.state = {
-            currentUser: null
-        };
-        this.subscription = null;
-    }
-    
     componentDidMount(): void {
         this.onGoogleAuthenticationChange();
     }
     
     onGoogleAuthenticationChange = (): void => {
+        const { setCurrentUser } = this.props;
         this.subscription = auth.onAuthStateChanged(async userAuth => {
             if (userAuth) {
                 const userRef =  await createUserProfileDocument(userAuth);
                 userRef?.onSnapshot(snapshot => {
-                    this.setState({
+                    setCurrentUser({
                         currentUser: {
                             id: snapshot.id,
                             ...snapshot.data()
                         }
                     });
-                    console.log(this.state);
                 });
             } else {
-                this.setState({ currentUser: userAuth });
+                setCurrentUser(userAuth);
             }
         });
     };
@@ -66,8 +59,8 @@ class App extends React.Component<any, AppState> {
     }
 }
 
-const mapDispatchToProps = dispatch => ({
-
+const mapDispatchToProps = (dispatch: any) => ({
+    setCurrentUser: (user: FirebaseUser) => dispatch(setCurrentUser(user))
 });
 
 export default connect(null, mapDispatchToProps)(App);
