@@ -6,8 +6,10 @@ import { auth } from '../../firebase/firebase.utils';
 import {FirebaseUser} from '../../redux/types/FirebaseUser';
 import { connect } from 'react-redux';
 import {AppState} from '../../redux/root-reducer';
+import CartIcon from '../cart-icon/cart-icon.component';
+import CartDropDown from '../cart-dropdown/cart-dropdown.component';
 
-const Header: React.FC<FirebaseUser> = ({ currentUser }) => (
+const Header: React.FC<any> = ({ currentUser , cart }) => (
     <div className="header">
         <Link className={'logo-container'} to={'/'}>
             <Logo className={'logo'}/>
@@ -25,12 +27,15 @@ const Header: React.FC<FirebaseUser> = ({ currentUser }) => (
                     :
                     <Link className='option' to='/signin'>SIGN IN</Link>
             }
+            <CartIcon/>
         </div>
+        { cart ? null : <CartDropDown/> }
     </div>
 );
 
 const mapStateToProps = (state: AppState) => ({
-    currentUser: state.user.currentUser
+    currentUser: state.user.currentUser,
+    cart: state.cart.hidden
 });
 
 export default connect(mapStateToProps)(Header);

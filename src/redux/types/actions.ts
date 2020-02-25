@@ -1,12 +1,7 @@
-import {FirebaseUser} from './FirebaseUser';
+import {SetCurrentUserAction} from '../user/user.action';
+import {ToggleCartAction} from '../cart/cart.action';
 
-export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export type UserActionTypes = SetCurrentUserAction;
+export type CartActionTypes = ToggleCartAction;
 
-export interface SetCurrentUserAction {
-    type: typeof SET_CURRENT_USER;
-    payload: FirebaseUser
-}
-
-export type UserActionTypes = SetCurrentUserAction
-
-export type AppActions = UserActionTypes;
+export type AppActions = UserActionTypes | CartActionTypes;

@@ -1,15 +1,17 @@
 import {FirebaseUser} from '../types/FirebaseUser';
-import {SET_CURRENT_USER, UserActionTypes} from '../types/actions';
+import {UserActionTypes} from '../types/actions';
+import {SET_CURRENT_USER} from './user.action';
+import {AppState} from '../root-reducer';
 
 const initialState: FirebaseUser = {
     currentUser: null
 };
 
-const userReducer = (state = initialState, action: UserActionTypes): any => {
+const userReducer = (state = initialState, action: UserActionTypes): AppState => {
     switch (action.type) {
         case SET_CURRENT_USER:
             return {...state, currentUser: action.payload};
-            default:
+        default:
             return state;
     }
 };
