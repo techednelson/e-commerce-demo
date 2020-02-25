@@ -1,14 +1,14 @@
 import {FirebaseUser} from '../types/FirebaseUser';
-import {AppActions} from '../types/actions';
+import { UserActionTypes } from '../types/actions';
+
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
 
 export interface SetCurrentUserAction {
     type: typeof SET_CURRENT_USER;
     payload: FirebaseUser
 }
 
-export const SET_CURRENT_USER = 'SET_CURRENT_USER';
-
-export const setCurrentUser = (user: FirebaseUser): AppActions => ({
+export const setCurrentUser = (user: FirebaseUser): UserActionTypes => ({
     type: SET_CURRENT_USER,
     payload: user
 });

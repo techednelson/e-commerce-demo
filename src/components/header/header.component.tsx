@@ -3,7 +3,6 @@ import './header.component.scss';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
 import { auth } from '../../firebase/firebase.utils';
-import {FirebaseUser} from '../../redux/types/FirebaseUser';
 import { connect } from 'react-redux';
 import {AppState} from '../../redux/root-reducer';
 import CartIcon from '../cart-icon/cart-icon.component';
